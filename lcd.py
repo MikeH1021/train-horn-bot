@@ -5,16 +5,13 @@ from pytz import timezone
 
 lcd = LCD()
 
-dt = datetime.now(timezone("US/Eastern"))
 
 def safe_exit(signum, frame):
     exit(1)
-try:
+while True:
+    dt = datetime.now(timezone("US/Eastern"))
     signal(SIGTERM, safe_exit)
     signal(SIGHUP, safe_exit)
     lcd.text(str(dt), 1)
     pause()
-except KeyboardInterrupt:
-    pass
-finally:
-    lcd.clear()
+    #lcd.clear()
