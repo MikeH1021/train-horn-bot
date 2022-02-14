@@ -14,4 +14,4 @@ while True:
     signal(SIGHUP, safe_exit)
     lcd.text(str(dt), 1)
     pause()
-    #lcd.clear()
+    lcd.clear()
