@@ -6,8 +6,10 @@ def safe_exit(signum, frame):
 try:
     signal(SIGTERM, safe_exit)
     signal(SIGHUP, safe_exit)
-    lcd.text("I EAT", 1)
-    lcd.text("ASS!!!!!!", 2)
+    lcd.text("John Kowal is genuinely", 1)
+    lcd.text("a simp", 2)
+    lcd.text("and he smells bad ngl", 3)
+    lcd.text("why is he alive? who knows", 4)
     pause()
 except KeyboardInterrupt:
     pass
