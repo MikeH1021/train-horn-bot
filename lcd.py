@@ -2,7 +2,7 @@ from signal import signal, SIGTERM, SIGHUP, pause
 from rpi_lcd import LCD
 from datetime import datetime
 from pytz import timezone
-
+from time import sleep
 lcd = LCD()
 
 
@@ -15,5 +15,5 @@ while True:
     signal(SIGTERM, safe_exit)
     signal(SIGHUP, safe_exit)
     lcd.text(dt, 1)
-
+    sleep(1)
     lcd.clear()
