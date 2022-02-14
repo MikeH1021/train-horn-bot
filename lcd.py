@@ -10,7 +10,10 @@ def safe_exit(signum, frame):
     exit(1)
 while True:
     dt = datetime.now(timezone("US/Eastern"))
+    dt = str(dt)
+    dt = dt[:-13]
     signal(SIGTERM, safe_exit)
     signal(SIGHUP, safe_exit)
-    lcd.text(str(dt), 1)
+    lcd.text(dt, 1)
+
     lcd.clear()
