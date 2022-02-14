@@ -14,9 +14,10 @@ while True:
     dt = dt[:-13]
     signal(SIGTERM, safe_exit)
     signal(SIGHUP, safe_exit)
+    
     if "16:20" in dt or "04:20" in dt:
         lcd.text("smoke weed everyday", 1)
-        sleep(1)
+        sleep(5)
         lcd.clear()
     else:
         lcd.text(dt, 1)
