@@ -6,10 +6,10 @@ led2 = 24
 led3 = 5
 led4 = 12
 
-sw1 = 16
-sw2 = 18
-sw3 = 19
-sw4 = 26
+#sw1 = 16
+#sw2 = 18
+#sw3 = 19
+#sw4 = 26
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(led1, GPIO.OUT)
@@ -23,17 +23,14 @@ while True:
     GPIO.output(led1, GPIO.HIGH)
     time.sleep(0.5)
     GPIO.output(led2, GPIO.HIGH)
-    time.sleep(0.5)
-    GPIO.output(led3, GPIO.HIGH)
-    time.sleep(0.5)
-    GPIO.output(led4, GPIO.HIGH)
-    #turn off leds
-    time.sleep(1)
     GPIO.output(led1, GPIO.LOW)
     time.sleep(0.5)
+    GPIO.output(led3, GPIO.HIGH)
     GPIO.output(led2, GPIO.LOW)
     time.sleep(0.5)
+    GPIO.output(led4, GPIO.HIGH)
     GPIO.output(led3, GPIO.LOW)
     time.sleep(0.5)
+    GPIO.output(led1, GPIO.HIGH)
     GPIO.output(led4, GPIO.LOW)
     time.sleep(0.5)
