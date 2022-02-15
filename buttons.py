@@ -20,14 +20,14 @@ GPIO.setup(led4, GPIO.OUT)
 
 while True:
     #turn on leds
-    GPIO.output(led1, GPIO.HIGH)
-    #GPIO.output(led2, GPIO.HIGH)
+    #GPIO.output(led1, GPIO.HIGH)
+    GPIO.output(led2, GPIO.HIGH)
     #GPIO.output(led3, GPIO.HIGH)
     #GPIO.output(led4, GPIO.HIGH)
     #turn off leds
     time.sleep(1)
     GPIO.output(led1, GPIO.LOW)
-    #GPIO.output(led2, GPIO.LOW)
-    #GPIO.output(led3, GPIO.LOW)
-    #GPIO.output(led4, GPIO.LOW)
+    GPIO.output(led2, GPIO.LOW)
+    GPIO.output(led3, GPIO.LOW)
+    GPIO.output(led4, GPIO.LOW)
     time.sleep(1)
