@@ -33,4 +33,3 @@ while True:
     time.sleep(0.5)
     GPIO.output(led1, GPIO.HIGH)
     GPIO.output(led4, GPIO.LOW)
-    time.sleep(0.5)
