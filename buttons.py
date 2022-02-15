@@ -1,7 +1,7 @@
 import RPi.GPIO as GPIO
 import time
 
-led1 = 17
+led1 = 6
 led2 = 24
 led3 = 5
 led4 = 12
