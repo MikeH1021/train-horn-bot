@@ -78,7 +78,7 @@ def addColor():
 
 # terminates the game in an amazing way
 def playEndGame():
-	print "\n\n          *** THE USER HAS LOST! ***\n\n"
+	print("THE USER HAS LOST!")
 	time.sleep(0.1)
 	GPIO.output(allLeds,1)
 	for i in range(0,7):
@@ -133,4 +133,4 @@ try:
 except KeyboardInterrupt:
 	playNote(0.5)
 	GPIO.cleanup()
-	print "\nProgram is over!"
+	print("Program is over!")
