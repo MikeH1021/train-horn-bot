@@ -1,3 +1,4 @@
+from time import sleep
 import RPi.GPIO as GPIO # Import Raspberry Pi GPIO library
 GPIO.setwarnings(True) # Ignore warning for now
 GPIO.setmode(GPIO.BCM)
@@ -15,15 +16,19 @@ GPIO.setup(sw4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 while True:
     
     if GPIO.input(sw1) == GPIO.HIGH:
+        sleep(0.1)
         print("Button 1was pushed!")
     
     elif GPIO.input(sw2) == GPIO.HIGH:
+        sleep(0.1)
         print("Button 2 was pushed!")
 
     elif GPIO.input(sw3) == GPIO.HIGH:
+        sleep(0.1)
         print("Button 3 was pushed!")
 
-    elif GPIO.input(sw1) == GPIO.HIGH:
+    elif GPIO.input(sw4) == GPIO.HIGH:
+        sleep(0.1)
         print("Button 4 was pushed!")
     
     else:
