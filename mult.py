@@ -28,20 +28,16 @@ GPIO.setup(sw4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 while True:
     
     if GPIO.input(sw1) == GPIO.HIGH:
-        sleep(0.5)
         GPIO.output(led1, GPIO.HIGH)
     
     elif GPIO.input(sw2) == GPIO.HIGH:
-        sleep(0.5)
         GPIO.output(led2, GPIO.HIGH)
 
 
     elif GPIO.input(sw3) == GPIO.HIGH:
-        sleep(0.5)
         GPIO.output(led3, GPIO.HIGH)
 
     elif GPIO.input(sw4) == GPIO.HIGH:
-        sleep(0.5)
         GPIO.output(led4, GPIO.HIGH)
     
     else:
