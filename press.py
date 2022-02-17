@@ -1,16 +1,16 @@
-import RPi.GPIO as GPIO
-import time
+import RPi.GPIO as GPIO # Import Raspberry Pi GPIO library
+GPIO.setwarnings(False) # Ignore warning for now
+GPIO.setmode(GPIO.BCM)
 
 sw1 = 16
 sw2 = 18
 sw3 = 19
 sw4 = 26
 
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(sw1, GPIO.IN)
-GPIO.setup(sw2, GPIO.IN)
-GPIO.setup(sw3, GPIO.IN)
-GPIO.setup(sw4, GPIO.IN)
+GPIO.setup(sw1, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # Set pin 10 to be an input pin and set initial value to be pulled low (off)
+GPIO.setup(sw2, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+GPIO.setup(sw3, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+GPIO.setup(sw4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
 while True:
     
