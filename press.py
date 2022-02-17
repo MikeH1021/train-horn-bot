@@ -27,4 +27,4 @@ while True:
     #     print("Button 4 was pushed!")
     
     else:
-        pass
+        continue
