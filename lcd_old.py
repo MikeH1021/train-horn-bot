@@ -4,10 +4,12 @@ from datetime import datetime
 from pytz import timezone
 from time import sleep
 
+lcd = LCD()
+
 
 def safe_exit(signum, frame):
     exit(1)
-    
+
 while True:
         dt = datetime.now(timezone("US/Eastern"))
         dt = str(dt)
