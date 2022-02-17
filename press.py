@@ -13,16 +13,18 @@ GPIO.setup(sw3, GPIO.IN)
 GPIO.setup(sw4, GPIO.IN)
 
 while True:
-  if (GPIO.input(sw1)):
-    print("Button 1 Pressed")
-
+    
+    if (GPIO.input(sw1)):
+        print("Button 1 Pressed")
+    
     elif (GPIO.input(sw2)):
-    print("Button 2 Pressed")
+        print("Button 2 Pressed")
 
     elif (GPIO.input(sw3)):
-    print("Button 3 Pressed")
+        print("Button 3 Pressed")
 
     elif (GPIO.input(sw4)):
-    print("Button 4 Pressed")
+        print("Button 4 Pressed")
     
-    
+    else:
+        break
