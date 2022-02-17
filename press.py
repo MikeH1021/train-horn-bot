@@ -1,5 +1,5 @@
 import RPi.GPIO as GPIO # Import Raspberry Pi GPIO library
-GPIO.setwarnings(False) # Ignore warning for now
+GPIO.setwarnings(True) # Ignore warning for now
 GPIO.setmode(GPIO.BCM)
 
 sw1 = 16
