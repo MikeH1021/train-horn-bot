@@ -17,14 +17,14 @@ while True:
     if GPIO.input(sw1) == GPIO.HIGH:
         print("Button 1was pushed!")
     
-    elif GPIO.input(sw2) == GPIO.HIGH:
-        print("Button 2 was pushed!")
+    # elif GPIO.input(sw2) == GPIO.HIGH:
+    #     print("Button 2 was pushed!")
 
-    elif GPIO.input(sw3) == GPIO.HIGH:
-        print("Button 3 was pushed!")
+    # elif GPIO.input(sw3) == GPIO.HIGH:
+    #     print("Button 3 was pushed!")
 
-    elif GPIO.input(sw1) == GPIO.HIGH:
-        print("Button 4 was pushed!")
+    # elif GPIO.input(sw1) == GPIO.HIGH:
+    #     print("Button 4 was pushed!")
     
     else:
         pass
