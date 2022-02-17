@@ -1,6 +1,6 @@
 import RPi.GPIO as GPIO # Import Raspberry Pi GPIO library
 GPIO.setwarnings(False) # Ignore warning for now
-GPIO.setmode(GPIO.BCM)
+GPIO.setmode(GPIO.BOARD)
 
 sw1 = 16
 sw2 = 18
@@ -15,7 +15,7 @@ GPIO.setup(sw4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 while True:
     
     if GPIO.input(sw1) == GPIO.HIGH:
-        print("Button 1 was pushed!")
+        print("Button 1was pushed!")
     
     elif GPIO.input(sw2) == GPIO.HIGH:
         print("Button 2 was pushed!")
