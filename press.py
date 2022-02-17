@@ -5,8 +5,8 @@ GPIO.setmode(GPIO.BCM)
 
 sw1 = 26
 sw2 = 19
-sw3 = 18
-sw4 = 16
+sw3 = 16
+sw4 = 18
 
 GPIO.setup(sw1, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # Set pin 10 to be an input pin and set initial value to be pulled low (off)
 GPIO.setup(sw2, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
