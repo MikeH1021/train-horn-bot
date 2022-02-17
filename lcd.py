@@ -28,6 +28,7 @@ async def lcd_screen():
             lcd.clear()
 
 async def main():
-    await lcd_screen()
+    task1 = asyncio.create_task(lcd_screen())
+    await task1
 
 asyncio.run(main())
