@@ -46,8 +46,8 @@ while True:
     
     else:
         GPIO.output(led1, GPIO.LOW)
-        GPIO.output(led1, GPIO.LOW)
-        GPIO.output(led1, GPIO.LOW)
-        GPIO.output(led1, GPIO.LOW)
+        GPIO.output(led2, GPIO.LOW)
+        GPIO.output(led3, GPIO.LOW)
+        GPIO.output(led4, GPIO.LOW)
 
 
