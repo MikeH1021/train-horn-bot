@@ -3,7 +3,7 @@ from rpi_lcd import LCD
 from datetime import datetime
 from pytz import timezone
 from time import sleep
-import asyncio
+import uasyncio
 
 lcd = LCD()
 
@@ -28,7 +28,7 @@ async def lcd_screen():
             lcd.clear()
 
 async def main():
-    task1 = asyncio.create_task(lcd_screen())
+    task1 = uasyncio.create_task(lcd_screen())
     await task1
 
-asyncio.run(main())
+uasyncio.run(main())
