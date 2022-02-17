@@ -14,17 +14,17 @@ GPIO.setup(sw4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
 while True:
     
-    if (GPIO.input(sw1)):
-        print("Button 1 Pressed")
+    if GPIO.input(sw1) == GPIO.HIGH:
+        print("Button 1 was pushed!")
     
-    elif (GPIO.input(sw2)):
-        print("Button 2 Pressed")
+    elif GPIO.input(sw2) == GPIO.HIGH:
+        print("Button 2 was pushed!")
 
-    elif (GPIO.input(sw3)):
-        print("Button 3 Pressed")
+    elif GPIO.input(sw3) == GPIO.HIGH:
+        print("Button 3 was pushed!")
 
-    elif (GPIO.input(sw4)):
-        print("Button 4 Pressed")
+    elif GPIO.input(sw1) == GPIO.HIGH:
+        print("Button 4 was pushed!")
     
     else:
         pass
