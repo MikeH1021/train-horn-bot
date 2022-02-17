@@ -3,12 +3,14 @@ from rpi_lcd import LCD
 from datetime import datetime
 from pytz import timezone
 from time import sleep
+import asyncio
+
 lcd = LCD()
 
 
 def safe_exit(signum, frame):
     exit(1)
-async def lcd():
+async def lcd_screen():
     while True:
         dt = datetime.now(timezone("US/Eastern"))
         dt = str(dt)
@@ -25,4 +27,7 @@ async def lcd():
             sleep(1)
             lcd.clear()
 
-lcd()
+async def main():
+    await lcd_screen()
+
+asyncio.run(main())
