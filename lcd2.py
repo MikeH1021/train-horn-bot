@@ -10,14 +10,11 @@ def safe_exit(signum, frame):
 signal(SIGTERM, safe_exit)
 signal(SIGHUP, safe_exit)
 
-try:
-    lcd.text("Hello World", 1)
+while True:
+    lcd.text("H", 1)
     sleep(1)
     lcd.clear()
-    lcd.text("Youre a bitch", 1)
-
-except KeyboardInterrupt:
-    pass
-
-finally:
+    sleep(1)
+    lcd.text("K", 1)
+    sleep(1)
     lcd.clear()
