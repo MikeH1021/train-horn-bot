@@ -11,7 +11,7 @@ signal(SIGTERM, safe_exit)
 signal(SIGHUP, safe_exit)
 
 try:
-    lcd.text("Hello World")
+    lcd.text("Hello World", 1)
     pause()
 
 except KeyboardInterrupt:
