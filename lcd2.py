@@ -13,7 +13,8 @@ signal(SIGHUP, safe_exit)
 try:
     lcd.text("Hello World", 1)
     sleep(1)
-    lcd.clear
+    lcd.clear()
+    lcd.text("Youre a bitch", 1)
 
 except KeyboardInterrupt:
     pass
