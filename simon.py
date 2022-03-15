@@ -8,7 +8,7 @@ GPIO.setmode(GPIO.BCM)
 L1 = 6
 L2 = 24
 L3 = 5
-L4 = 12
+L4 = 13
 allLeds = [L1,L2,L3,L4]
 B1 = 26
 B2 = 19
